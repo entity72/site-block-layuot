@@ -1,0 +1,295 @@
+/* Убираем отступы и поля на странице по умолчанию*/
+*
+{
+margin: 0px;
+padding: 0px;
+}
+
+/* Устанавливаем цвета ссылок в зависимости от поведения пользователя */
+a:link {
+	color: #D72020;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #FF0000;
+}
+
+a:visited {
+	color: #D72020;
+}
+
+body {
+	background: url(../images/back_all.jpg) repeat-x;
+	font: 13px Arial, Helvetica, sans-serif;
+	color: #333333;
+}
+
+/* зададим общее оформление обоих элементов шапки
+ выравнивание текста по левому краю, белый фон и высоту 200px*/
+#header {
+	background: url(../images/header_top.jpg) repeat-x;
+	height:200px;
+	width: 1180px;
+	margin:0px auto;/*выравнивание 0 сверху, по центру*/
+	text-align: left;		
+}
+
+#g_menu
+{
+	background: #042351;
+	height: 60px;
+	width: 1180px;
+	margin:auto auto;/*выравнивание auto*/
+}
+
+#logo a {
+	float: none;
+	margin: 300px;
+	text-decoration: none;
+	font-style: italic;
+	color: #FFFFFF;
+}
+#logo h1 a
+{
+	text-transform: uppercase;
+	font-size: 24px;
+}
+#logo h2 a
+{
+	text-transform: lowercase;
+	font-size: 16px;
+}
+
+#logo_h {
+	padding: 200px 100px;
+	margin: -45px 100px;
+	background: url(../images/big_pic.png) no-repeat;
+}
+/*Вид ссылок*/
+#menu a {
+	float: left;
+	width: 95px;
+	height: 43px;
+	display: block;
+	font-style: italic;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 18px;
+	padding-top: 15px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+#menu a:hover {
+	color: #D72020;
+	text-decoration: underline;
+}
+#select {
+	background-color: #ff9900;
+}
+
+#nav_menu {
+position: absolute;
+padding-top:10px;
+margin-left: 1000px;
+}
+
+/*-----------------Верстаем основную часть страницы*/
+#content {
+	margin-left: auto;
+    margin-right: auto;
+	margin-bottom:0px;
+	background: #ffffff;
+	height:750px;
+	width: 1180px;
+}
+/*боковое меню */
+#left
+{
+	margin-left: auto;
+    margin-right: auto;
+	float: left;
+	padding: 10px;
+	width: 240px;
+	padding-right: 1em;
+}
+
+#left h3
+{
+width: 225px;
+height: 30px;
+font-size: 18px;
+font-weight: bold;
+padding-left: 15px;
+padding-top: 15px;
+text-transform: uppercase;
+color: #ffffff;
+background: url(../images/title.jpg) no-repeat
+}
+
+#left ul {
+	margin: 0;
+	padding: 10px;
+	list-style: none;
+	width: 150px;
+	font-size: 18px;
+}
+
+#left li ul {
+	z-index:100;
+	position: absolute;
+	left: 140px;
+	top: 0;
+	display: none;
+}
+
+#left ul li {
+
+	position: relative;
+	margin-bottom:20px;
+} 
+
+#left ul li a {
+	display: block;
+	text-decoration: none;
+	font-weight: bold;
+	color: #ffffff;
+	background: #ff9900;
+	padding: 10px;
+	border: 1px solid gold;
+	border-bottom: 0;
+} 
+ 
+ #left ul li a:hover {
+	text-decoration: none;
+	background: #ffcc00;
+} 
+#left li:hover ul {
+	display: block;
+}
+
+#left li li {
+	margin-bottom:0px;
+	width: 150px;
+}
+
+#left p
+{
+padding: 20px;
+border: 2px solid #ff9000;
+}
+
+/* левая часть*/
+#right
+{
+float: right;
+width: 500px;
+padding-right: 0px;
+margin-right:400px;
+
+
+}
+
+#after {
+	background: url(../images/after.jpg) no-repeat;
+	height:4px;
+	width: 887px;
+}	
+#right h4
+{
+	margin: 0;
+	padding: 0px;
+	font-size: 12px;
+	color: #D72020;
+}
+
+#right a
+{
+color: #D72020;
+text-decoration: none;
+}
+
+#right p {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 10px;
+}
+
+#right h1 {
+	font-size: 30px;
+	margin: 0;
+	padding: 10px;
+	padding-top: 10px;
+	padding-bottom:5px;
+	color: #c92c2f;
+}	
+#right h2 {
+	font-size: 18px;
+	margin: 0;
+	padding: 10px;
+	padding-top: 0px;
+	color: #ff9000;
+	
+}
+/*строка картинок в галерее*/
+#line {
+	display:block;
+	position: relative;
+	margin-right: 10px;
+	padding: 0px;
+	height:200px;
+	width: 887px;*/
+}
+/*свойства картинки в галерее*/
+#picture {
+	float: left;
+	margin: 15px;
+	padding: 0px;
+	height:180px;
+	width: 265px;
+	box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5); /*тень*/
+}
+
+#picture:hover img.thumbnail {
+  opacity: .7;
+  transition: .3s;
+}
+
+#clear {
+     clear: both;
+}
+/*Делаем футер*/
+#footer {
+	margin-left: auto;
+    margin-right: auto;
+	height: 185px;
+	clear: both;
+	padding-top: 20px;
+	width: 1180px;
+	background: url(../images/footer.jpg) repeat-x;
+	border-top: 4px solid #ff9000;
+}
+
+#footer p {
+	margin: 0;
+	font-size: 10px;
+	text-align: center;
+	color: #ffffff;
+}
+
+#footer a {
+	font-size: 10px;
+	font-weight: bold;
+	color: #ffffff;
+}
+#banner {
+	margin-left: auto;
+    margin-right: auto;
+	margin-bottom:10px;
+	background: url(../banner/banner_color.gif) no-repeat;
+	height:120px;
+	width: 468px;
+}
